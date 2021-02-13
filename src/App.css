@@ -1,20 +1,124 @@
+
+:root {
+  /* --animate-duration: 800ms; */
+  --animate-delay: 0.9s;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.flex-center {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
 .App {
   text-align: center;
+  width: 100%;
+}
+.card-body {
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app-first {
+  text-align: center;
+  position: fixed;
+  top: 0;
+  /* top: 10vh; */
+  width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app-second {
+  text-align: center;
+  position: fixed;
+  top: 15vh;
+  width: 100%;
 }
 
+.app-third {
+  text-align: center;
+  position: fixed;
+  top: 15vh;
+  width: 100%;
+}
+
+a {
+  color: white;
+}
 .App-header {
-  background-color: #282c34;
+  background-color: #d63f0d;
+  /* background-color: #214ca1; */
+  background-image: url(./images/pexels-nick-collins-1293120.jpg);
+  background-image: url(./images/pexels-irina-iriser-1090972.jpg);
+  background-image: url(./images/pexels-little-visuals-1726.jpg);
+
+
+
+  height: 15vh;
+  display: flex;
+  flex-direction: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  width: 100%;
+}
+
+
+.App-header1 {
+  background-color: #214ca1;
+  background-color: #d63f0d;
+
+  background-image: url(./images/pexels-nick-collins-1293120.jpg);
+  background-image: url(./images/pexels-irina-iriser-1090972.jpg);
+  background-image: url(./images/pexels-little-visuals-1726.jpg);
+
+  background-size: cover;
+  /* background-repeat: no-repeat; */
+  height: 15vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  width: 100%;
+}
+
+.App-header2 {
+  background-color: #214ca1;
+  /* background-color: #0e100f; */
+
+  /* background-image: url(./images/pexels-nick-collins-1293120.jpg); */
+  background-size: cover;
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  width: 100%;
+}
+
+
+.App-header3 {
+  background-image: url(./images/pexels-nick-collins-1293120.jpg);
+  background-image: url(./images/pexels-irina-iriser-1090972.jpg);
+  background-image: url(./images/pexels-little-visuals-1726.jpg);
+
+  /* background-size: stretch; */
+  background-size: cover;
+  background-color:#214ca1;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -22,17 +126,50 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  width: 100%;
 }
-
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.animate__animated.animate__fadeIn {
+  --animate-duration: 1s;
+}
+
+.animate__animated.animate__fadeOut {
+  --animate-duration: 5s;
+}
+.animate__animated.animate__fadeInRight {
+  --animate-duration: 2s;
+}
+
+.animate__animated.animate__bounce {
+  --animate-duration: 8s;
+
+}
+
+
+.card-detail-holder{
+  width: 1300px;
+  height: 70vh;
+  border-radius: 10px;
+  background-size: cover;
+
+}
+
+.inside-body {
+  width: 500px;
+  height: 280px;
+  color: white;
+  font-size: 25px;
+  border-radius: 10px;
+  display: flex;
+  padding-left: 70px;
+  padding-right: 70px;  
+  font-family: 'Rubik', sans-serif;
+}
+
+
+.myfont-big {
+  padding-top: 50px;
 }
