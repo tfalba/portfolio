@@ -1,5 +1,7 @@
 import movieDatabaseImage from './images/movie-database-screenshot.jpg'
 import mysteryWordImage from './images/mystery-word-screenshot.jpg'
+import movieWatcherImage from './images/movie-watcher-screenshot.jpg'
+
 const portfolioData = [
   {
     title: 'Social Greeting Card App',
@@ -15,15 +17,15 @@ const portfolioData = [
     url: 'https://blissful-lewin-7eeb51.netlify.app/',
     shortDescription: 'Built in react, this trivia game searches a trivia api for questions by category and gives users the option of playing different levels. Scores are reported at the end with visualization tools from victory.',
     coverImageUrl: '',
-    gitHubUrl: ''
+    gitHubUrl: 'https://github.com/momentum-projects/react-trivia-tfalba'
   },
   {
     title: 'Itunes Music Search',
     iFrame: true,
     url: 'https://suspicious-tesla-230564.netlify.app/',
-    shortDescription: "If you're just getting into programming and/or JavaScript, this book will briefly explore what you need to get up and going.",
+    shortDescription: 'A search tool built with vanilla JavaScript to find music tracks by song, album, or artist. Features audio samples.',
     coverImageUrl: '',
-    gitHubUrl: ''
+    gitHubUrl: 'https://github.com/momentum-team-6/itunes-search-app-tfalba'
   },
   {
     title: 'Movie Nomination Tracker',
@@ -31,7 +33,7 @@ const portfolioData = [
     url: 'https://demo-movie-challenge.herokuapp.com/',
     shortDescription: 'Built with python in django and using vanilla JavaScript, this app searches a movie database and allows users to mark records for consideration or award nomination. Selected movie detail options allows user to preview trailers.',
     coverImageUrl: movieDatabaseImage,
-    gitHubUrl: ''
+    gitHubUrl: 'https://github.com/tfalba/movie-challenge'
   },
   {
     title: 'Library Shelf',
@@ -39,7 +41,7 @@ const portfolioData = [
     url: 'https://silly-aryabhata-afc22c.netlify.app/',
     shortDescription: 'A simple app built in react to toggle various levels of information about books in a library.',
     coverImageUrl: '',
-    gitHubUrl: 'https://silly-aryabhata-afc22c.netlify.app/'
+    gitHubUrl: 'https://github.com/tfalba/react-freeshelf'
   },
   {
     title: 'Mystery Word',
@@ -47,15 +49,24 @@ const portfolioData = [
     url: 'https://blooming-escarpment-83670.herokuapp.com/core/',
     shortDescription: 'A hangman type game built with object-oriented programming using python and django. Adds a lookup feature that searches the Oxford Dictioary api.',
     coverImageUrl: mysteryWordImage,
+    gitHubUrl: 'https://github.com/tfalba/mystery-word'
+  },
+  {
+    title: 'Memory Matching Game',
+    iFrame: true,
+    url: 'https://laughing-bardeen-b58c2b.netlify.app/',
+    shortDescription: 'A memory tile match game built with vanilla JavaScript. Includes multiple levels and category types.',
+    coverImageUrl: '',
+    gitHubUrl: 'https://github.com/tfalba/js-memory-game-tfalba'
+  },
+  {
+    title: 'Movie Watching Tracker',
+    iFrame: false,
+    url: '',
+    shortDescription: 'Built with JavaScript to search movies and mark as to-watch or watched. Features trailer preview.',
+    coverImageUrl: movieWatcherImage,
     gitHubUrl: ''
   }
-  // {
-  //   title: 'Mystery Word',
-  //   iFrame: true,
-  //   url: 'https://inspiring-carson-dcc02a.netlify.app/',
-  //   shortDescription: "If you're just getting into programming and/or JavaScript, this book will briefly explore what you need to get up and going.",
-  //   coverImageUrl: ''
-  // }
 
 ]
 

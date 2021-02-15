@@ -26,7 +26,20 @@ body {
 .App {
   text-align: center;
   width: 100%;
+}
+.footer {
   /* position: fixed; */
+  text-align: center;
+  width: 100%;
+  bottom: 0;
+  margin-top: 50px;
+  color: white;
+  height: 10vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+
 }
 
 .card-body {
@@ -58,14 +71,10 @@ a {
 }
 
 .App-header2 {
-  background-color: #0d1216;
-  background: linear-gradient(#117eea, #0d1216);
   background: linear-gradient(#0d0e0f, #0d1216);
-  /* position: relative; */
   background-size: cover;
-  /* top: 7vh; */
-  height: 93vh;
   height: 100vh;
+  /* height: 85vh; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -80,8 +89,6 @@ a {
   background: linear-gradient(#117eea, #0d1216);
   background: linear-gradient(#0d0e0f, #0d1216);
   background-size: cover;
-  /* position: fixed; */
-  /* top: 7vh; */
   height: 93vh;
   display: flex;
   flex-direction: column;
@@ -95,17 +102,8 @@ a {
 }
 
 .resume-page {
-  /* background-color: #0d1216;
-  background: linear-gradient(#117eea, #0d1216);
-  background: linear-gradient(#0d0e0f, #0d1216); */
-
-  /* background-size: cover; */
-  /* height: 93vh; */
   display: flex;
-  /* flex-direction: column; */
-  /* align-items: center; */
   justify-content: flex-start;
-  /* font-size: calc(10px + 1.5vmin); */
   color: white;
   color: black;
   width: auto;
@@ -117,11 +115,13 @@ a {
 }
 
 .App-header3 {
-  background-image: url(./images/pexels-nick-collins-1293120.jpg);
-  background-image: url(./images/pexels-irina-iriser-1090972.jpg);
   background-image: url(./images/pexels-little-visuals-1726.jpg);
+  /* background-image: url(./images/william-daigneault-Cd84YdL9px8-unsplash.jpg); */
+  /* background-image: url(./images/scott-rodgerson-lRtzEExP0H8-unsplash.jpg); */
+  /* background-image: url(./images/ishan-seefromthesky-i1xZ2OfZxW8-unsplash.jpg); */
+  background-image: url(./images/marcelo-quinan-R3pUGn5YiTg-unsplash.jpg);
   background-size: cover;
-  background-color:#214ca1;
+  background-color: #214ca1;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -148,7 +148,6 @@ a {
   position: relative;
   width: 1300px;
   height: 65vh;
-  /* height: 900px; */
   border-radius: 10px;
   background-size: cover;
 }
@@ -156,7 +155,7 @@ a {
 .card {
   background-color: #1e1f20;
 }
-
+/* 
 .modal-content {
   background-color:#2a2a2b;
   color: white;
@@ -164,7 +163,7 @@ a {
 }
 .modal-backdrop.show {
   opacity: .7;
-}
+} */
 
 .btn, .btn-primary {
   background-color: black;
