@@ -3,7 +3,9 @@
   /* --animate-duration: 800ms; */
   --animate-delay: 0.9s;
 }
-
+body {
+  background-color: black;
+}
 .flex {
   display: flex;
   flex-wrap: wrap;
@@ -24,31 +26,18 @@
 .App {
   text-align: center;
   width: 100%;
+  /* position: fixed; */
 }
+
 .card-body {
   padding: 0;
 }
 
-.app-first {
-  text-align: center;
-  position: fixed;
-  top: 0;
-  /* top: 10vh; */
-  width: 100%;
-}
-
 .app-second {
   text-align: center;
-  position: fixed;
-  top: 7vh;
   width: 100%;
-}
-
-.app-third {
-  text-align: center;
-  position: fixed;
-  top: 7vh;
-  width: 100%;
+  /* position: fixed; */
+  /* top: 7vh; */
 }
 
 a {
@@ -56,9 +45,6 @@ a {
 }
 
 .App-header1 {
-  background-color: #117eea;
-  /* background: linear-gradient(#117eea, #0d1216); */
-  
   background-color: #0a0909;
   height: 7vh;
   display: flex;
@@ -75,9 +61,11 @@ a {
   background-color: #0d1216;
   background: linear-gradient(#117eea, #0d1216);
   background: linear-gradient(#0d0e0f, #0d1216);
-
+  /* position: relative; */
   background-size: cover;
+  /* top: 7vh; */
   height: 93vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -85,12 +73,15 @@ a {
   font-size: calc(10px + 3vmin);
   color: white;
   width: 100%;
-  padding-top: 50px;
+  padding-top: 20px;
 }
+
 .profile-page {
   background: linear-gradient(#117eea, #0d1216);
   background: linear-gradient(#0d0e0f, #0d1216);
   background-size: cover;
+  /* position: fixed; */
+  /* top: 7vh; */
   height: 93vh;
   display: flex;
   flex-direction: column;
@@ -101,6 +92,28 @@ a {
   padding-bottom: 150px;
   padding-left: 50px;
   padding-right: 50px;
+}
+
+.resume-page {
+  /* background-color: #0d1216;
+  background: linear-gradient(#117eea, #0d1216);
+  background: linear-gradient(#0d0e0f, #0d1216); */
+
+  /* background-size: cover; */
+  /* height: 93vh; */
+  display: flex;
+  /* flex-direction: column; */
+  /* align-items: center; */
+  justify-content: flex-start;
+  /* font-size: calc(10px + 1.5vmin); */
+  color: white;
+  color: black;
+  width: auto;
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+  border: solid 2px rgb(203, 200, 200);
+  border-radius: 10px;
 }
 
 .App-header3 {
@@ -130,16 +143,124 @@ a {
   --animate-duration: 2s;
 }
 
-
 .card-detail-holder{
   background-color: #1e1f20;
   position: relative;
   width: 1300px;
-  height: 70vh;
+  height: 65vh;
+  /* height: 900px; */
   border-radius: 10px;
   background-size: cover;
 }
 
 .card {
   background-color: #1e1f20;
+}
+
+.modal-content {
+  background-color:#2a2a2b;
+  color: white;
+  border-radius: 10px;
+}
+.modal-backdrop.show {
+  opacity: .7;
+}
+
+.btn, .btn-primary {
+  background-color: black;
+  border: 1px solid white;
+}
+
+.btn:hover, .btn:visited, .btn-primary:focus, .btn.primary:focus, .btn:active, .btn-primary:active {
+  background-color: rgb(52, 51, 51);
+  border: 1px solid white;
+
+}
+.btn:visited {
+  background-color: rgb(52, 51, 51);
+}
+
+.btn-primary:focus {
+  background-color:rgb(52, 51, 51);
+}
+.btn.primary:focus {
+  background-color:rgb(52, 51, 51);
+}
+
+.resume-header-main, .resume-header-side {
+  background-color: #ffeb3b;
+  padding: 5px;
+  margin-top: 10px;
+  font-weight: 200;
+  justify-content: center;
+  font-size: 20px;
+}
+
+.resume-header-side {
+  color: black;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  margin-top: 25px;
+}
+
+.sidebar-list, .resume-list-item {
+  padding-left: 10px;
+  padding: 5px 10px 5px 10px;
+  font-size: 19px;
+  text-align: left;
+  border: none;
+  font-weight: 400;
+}
+.sidebar-list {
+  font-size: 20px;
+  padding-top: 15px;
+}
+.sidebar-detail {
+  text-align: left;
+  font-size: 16px;
+  padding: 8px;
+  padding-left: 10px;
+  font-weight: 700;
+}
+.sidebar-highlight {
+  font-style: italic;
+  text-align: left;
+  padding-left: 10px;
+}
+.resume-list-item {
+  font-size: 16px;
+}
+
+.resume-about-me, .resume-title {
+  padding: 10px;
+  font-size: 22px;
+  line-height: 1.5rem;
+  font-weight: 300;
+  text-align: left;
+}
+.resume-about-me {
+  font-size: 18px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.resume-title {
+  font-size: 19px;
+  font-weight: 400;
+}
+.resume-place {
+  padding: 5px 10px 0 10px;
+  justify-content: space-between;
+  font-weight: 500;
+  font-size: 20px;
+}
+.resume-department {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.resume-years {
+  font-weight: 400;
+  font-size: 18px;
 }
