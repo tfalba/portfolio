@@ -60,7 +60,7 @@ function App () {
                   project={project}
                 />
                 <div style={{ paddingTop: '30px' }} key={idx}>{project.title}</div>
-                <div style={{ marginLeft: '150px', marginRight: '150px', fontSize: '19px', padding: '10px', textAlign: 'center' }}>{project.shortDescription}</div>
+                <div className='project-description'>{project.shortDescription}</div>
                 {(project.url !== '') && (
                   <Button variant='secondary'>
                     <a href={project.url} rel='noreferrer' target='_blank'>Link to site</a>

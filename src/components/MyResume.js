@@ -5,8 +5,8 @@ import Row from 'react-bootstrap/Row'
 const MyResume = (props) => {
   return (
 
-    <div style={{ maxWidth: '1200px', marginLeft: '150px', marginRight: '150px', backgroundColor: 'white', color: 'black' }} className='resume-page App animate__animated animate__fadeIn'>
-      <Col style={{ paddingTop: '20px', paddingBottom: '20px' }} sm={9}><span style={{ fontSize: '30px' }}>Tracy Falba, Ph.D.</span>
+    <div className='resume-page App animate__animated animate__fadeIn'>
+      <Col style={{ backgroundColor: 'white', paddingTop: '20px', paddingBottom: '20px' }} sm={9}><span style={{ fontSize: '30px' }}>Tracy Falba, Ph.D.</span>
         <Row className='resume-header-main'>About Me</Row>
         <Row><div className='resume-about-me'>I am a software developer embarking on a career overhaul to finally combine all of my creative and analytical passions. I am rapidly developing a full-stack skillset and ready to leverage my prior skills in new environments. I am an engaged problem solver with tons of creativity, experience in multiple team environments, and have a non-stop drive to learn new things to enhance life on the planet.</div></Row>
         <Row className='resume-header-main'>Experience</Row>

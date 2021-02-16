@@ -86,7 +86,8 @@ a {
   background: linear-gradient(#117eea, #0d1216);
   background: linear-gradient(#0d0e0f, #0d1216);
   background-size: cover;
-  height: 93vh;
+  /* height: 93vh; */
+  top: 7vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -97,18 +98,32 @@ a {
   padding-left: 50px;
   padding-right: 50px;
 }
+@media (min-width: 576px) {
+  .profile-page {
+    height: 93vh;
+  }
+}
 
 .resume-page {
   display: flex;
   justify-content: flex-start;
   color: white;
   color: black;
+  background-color: white;
   width: auto;
   margin-top: 50px;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 5px;
+  margin-right: 5px;
   border: solid 2px rgb(203, 200, 200);
   border-radius: 10px;
+  max-width: 1200px;
+}
+
+@media (min-width: 1000px) {
+  .resume-page {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
 }
 
 .App-header3 {
@@ -143,13 +158,39 @@ a {
 .card-detail-holder{
   background-color: #1e1f20;
   position: relative;
-  width: 1250px;
+  /* width: 1250px; */
+  width: 800px;
   /* width: 1100px; */
-  height: 65vh;
+  height: 60vh;
   border-radius: 10px;
   background-size: cover;
 }
 
+@media (min-width: 1400px) {
+  .card-detail-holder {
+    width: 1250px;
+    height: 65vh;
+  }
+}
+
+.project-description {
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 17px;
+  padding: 2px;
+  text-align: center;
+}
+
+@media (min-width: 1400px) {
+  .project-description {
+
+    margin-left: 150px;
+    margin-right: 150px;
+    padding: 10px;
+    font-size: 19px;
+    }
+
+}
 .card {
   background-color: #1e1f20;
 }
