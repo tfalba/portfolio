@@ -71,7 +71,7 @@ const portfolioData = [
     title: 'Resume Site',
     iFrame: true,
     // url: 'http://localhost:3000/#/resume',
-    url: 'https://www.tracy-falba.com/#/portfolio',
+    url: 'https://www.tracy-falba.com/#/resume',
     shortDescription: 'Built with JavaScript to search movies and mark as to-watch or watched. Features trailer preview.',
     coverImageUrl: movieWatcherImage,
     gitHubUrl: ''
