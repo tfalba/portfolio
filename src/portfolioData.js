@@ -52,6 +52,15 @@ const portfolioData = [
     gitHubUrl: 'https://github.com/tfalba/mystery-word'
   },
   {
+    title: 'Mystery Word redux in React',
+    iFrame: true,
+    url: 'https://loving-euclid-9331c1.netlify.app/',
+    shortDescription: 'A hangman type game built with React',
+    gitHubUrl: ''
+
+  },
+
+  {
     title: 'Memory Matching Game',
     iFrame: true,
     url: 'https://laughing-bardeen-b58c2b.netlify.app/',

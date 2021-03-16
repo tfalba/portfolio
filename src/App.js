@@ -14,9 +14,7 @@ function App () {
 
     <Router>
       <div className='App' />
-
       <Switch>
-
         <Route path='/profile'>
           <div className='animate__animated animate__fadeIn' />
           <div>
@@ -29,7 +27,6 @@ function App () {
           </div>
           <MyProfile className='App-header2 App animate__animated animate__fadeIn' props />
         </Route>
-
         <Route path='/resume'>
           <div className='animate__animated animate__fadeIn' />
           <div>
@@ -42,7 +39,6 @@ function App () {
           </div>
           <MyResume className='App-header2 App animate__animated animate__fadeIn' props />
         </Route>
-
         <Route path='/portfolio'>
           <div className='animate__animated animate__fadeIn' />
           <div>
@@ -108,9 +104,7 @@ function App () {
           <Col style={{ fontSize: '20px' }} sm={4}><a href='https://www.linkedin.com/in/tracy-falba/' rel='noreferrer' target='_blank'>LinkedIn</a></Col>
           <Col style={{ fontSize: '20px' }} sm={4}><Link to='/scheduler'>Calendly</Link></Col>
         </Row>
-        {/* </Row> */}
       </div>
-
     </Router>
 
   )
