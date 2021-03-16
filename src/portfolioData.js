@@ -52,7 +52,14 @@ const portfolioData = [
     gitHubUrl: 'https://github.com/tfalba/mystery-word'
   },
   {
-    title: 'Mystery Word redux in React',
+    title: 'Chore Wars',
+    iFrame: true,
+    url: 'https://chorewars.netlify.app/',
+    shortDescription: 'A chore tracking app for families and friends. Built as a final team project at Momentum Learn. Frontend in React using a backend API built on a Django REST framework.',
+    gitHubUrl: ''
+  },
+  {
+    title: 'Mystery Word in React',
     iFrame: true,
     url: 'https://loving-euclid-9331c1.netlify.app/',
     shortDescription: 'A hangman type game built with React',
