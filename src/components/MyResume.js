@@ -75,6 +75,8 @@ const MyResume = (props) => {
           <li>Stata</li>
           <li>SAS</li>
         </ul>
+        <br />
+        <a href='https://tracy-falba-resume.s3.amazonaws.com/Tracy+Falba+-+Software+Developer+Resume+-+Mar+2021.pdf'>Download pdf of resume</a>
       </Col>
     </div>
   )

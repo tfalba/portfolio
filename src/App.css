@@ -1,4 +1,3 @@
-
 :root {
   /* --animate-duration: 800ms; */
   --animate-delay: 0.9s;
@@ -10,7 +9,6 @@ body {
   display: flex;
   flex-wrap: wrap;
 }
-
 
 .flex-center {
   display: flex;
@@ -38,8 +36,6 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-
-
 }
 
 .card-body {
@@ -98,9 +94,12 @@ a {
   padding-left: 50px;
   padding-right: 50px;
 }
-@media (min-width: 576px) {
+@media (min-width: 876px) {
   .profile-page {
     height: 93vh;
+  }
+  .App-header3 {
+    background-size: cover;
   }
 }
 
@@ -127,13 +126,7 @@ a {
 }
 
 .App-header3 {
-  background-image: url(./images/pexels-little-visuals-1726.jpg);
   background-image: url(./images/william-daigneault-Cd84YdL9px8-unsplash.jpg);
-  /* background-image: url(./images/scott-rodgerson-lRtzEExP0H8-unsplash.jpg); */
-  /* background-image: url(./images/ishan-seefromthesky-i1xZ2OfZxW8-unsplash.jpg); */
-  /* background-image: url(./images/marcelo-quinan-R3pUGn5YiTg-unsplash.jpg); */
-  background-size: cover;
-  background-color: #214ca1;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -155,7 +148,7 @@ a {
   --animate-duration: 2s;
 }
 
-.card-detail-holder{
+.card-detail-holder {
   background-color: #1e1f20;
   position: relative;
   /* width: 1250px; */
@@ -183,13 +176,11 @@ a {
 
 @media (min-width: 1400px) {
   .project-description {
-
     margin-left: 150px;
     margin-right: 150px;
     padding: 10px;
     font-size: 19px;
-    }
-
+  }
 }
 .card {
   background-color: #1e1f20;
@@ -204,28 +195,34 @@ a {
   opacity: .7;
 } */
 
-.btn, .btn-primary {
+.btn,
+.btn-primary {
   background-color: black;
   border: 1px solid white;
 }
 
-.btn:hover, .btn:visited, .btn-primary:focus, .btn.primary:focus, .btn:active, .btn-primary:active {
+.btn:hover,
+.btn:visited,
+.btn-primary:focus,
+.btn.primary:focus,
+.btn:active,
+.btn-primary:active {
   background-color: rgb(52, 51, 51);
   border: 1px solid white;
-
 }
 .btn:visited {
   background-color: rgb(52, 51, 51);
 }
 
 .btn-primary:focus {
-  background-color:rgb(52, 51, 51);
+  background-color: rgb(52, 51, 51);
 }
 .btn.primary:focus {
-  background-color:rgb(52, 51, 51);
+  background-color: rgb(52, 51, 51);
 }
 
-.resume-header-main, .resume-header-side {
+.resume-header-main,
+.resume-header-side {
   background-color: #ffeb3b;
   padding: 5px;
   margin-top: 10px;
@@ -243,7 +240,8 @@ a {
   margin-top: 25px;
 }
 
-.sidebar-list, .resume-list-item {
+.sidebar-list,
+.resume-list-item {
   padding-left: 10px;
   padding: 5px 10px 5px 10px;
   font-size: 19px;
@@ -271,7 +269,8 @@ a {
   font-size: 16px;
 }
 
-.resume-about-me, .resume-title {
+.resume-about-me,
+.resume-title {
   padding: 10px;
   font-size: 22px;
   line-height: 1.5rem;

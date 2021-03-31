@@ -88,7 +88,7 @@ function App () {
 
         <Route path='/'>
           <div style={{ fontSize: '50px' }} className='App-header3 App animate__animated animate__fadeIn'><span>Tracy Falba</span>
-            <div style={{ paddingTop: '50px', fontSize: '30px', width: '60%', justifyContent: 'space-between' }} className='flex'>
+            <div style={{ paddingTop: '50px', fontSize: '30px', width: '45%', justifyContent: 'space-between' }} className='flex'>
               <Link to='/profile'>About Me</Link>
               <Link to='/resume'>Resume</Link>
               <Link to='/portfolio'>Portfolio</Link>
@@ -97,14 +97,14 @@ function App () {
         </Route>
 
       </Switch>
-      <div className='footer App'>
+      {/* <div className='footer App'>
         <Row style={{ fontSize: '30px', justifyContent: 'center' }}>Connect @</Row>
         <Row style={{ justifyContent: 'center', alignItems: 'center' }}>
           <Col style={{ fontSize: '20px' }} sm={4}><a href='https://github.com/tfalba' rel='noreferrer' target='_blank'>GitHub Repos</a></Col>
           <Col style={{ fontSize: '20px' }} sm={4}><a href='https://www.linkedin.com/in/tracy-falba/' rel='noreferrer' target='_blank'>LinkedIn</a></Col>
           <Col style={{ fontSize: '20px' }} sm={4}><Link to='/scheduler'>Calendly</Link></Col>
         </Row>
-      </div>
+      </div> */}
     </Router>
 
   )
