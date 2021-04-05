@@ -2,18 +2,19 @@ import { Link } from 'react-router-dom'
 import Col from 'react-bootstrap/Col'
 import Row from 'react-bootstrap/Row'
 import Media from 'react-bootstrap/Media'
-import headshot6 from '../images/headshot6.jpg'
+// import headshot6 from '../images/headshot6.jpg'
+import headshot2 from '../images/headshot2.jpg'
 
 const MyProfile = (props) => {
   return (
     <div className='profile-page App animate__animated animate__fadeIn'>
       <Media className='flex' style={{ padding: '20px', backgroundColor: '#5a5e6140' }}>
         <img
-          style={{ borderRadius: '150px', border: '12px ridge #00000012' }}
-          width={280}
-          height={300}
+          style={{ borderRadius: '10px', border: '12px ridge #00000012' }}
+          width={350}
+          height={350}
           className='mr-3'
-          src={headshot6}
+          src={headshot2}
           alt='Tracy Falba headshot'
         />
         <Media.Body style={{ justifyContent: 'flex-start', minHeight: '305px', maxWidth: '680px', minWidth: '300px' }} className='flex-col'>

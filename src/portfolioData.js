@@ -4,14 +4,6 @@ import movieWatcherImage from './images/movie-watcher-screenshot.jpg'
 
 const portfolioData = [
   {
-    title: 'Social Greeting Card App',
-    iFrame: true,
-    url: 'https://sharp-wright-161e04.netlify.app/',
-    shortDescription: 'A team project with a frontend built in react and a backend built in django that creates a REST API on heroku. Users can create custom greeting cards using photos from the Unsplash API, save and edit them. Users can follow other friends and favorite cards.',
-    coverImageUrl: '',
-    gitHubUrl: ''
-  },
-  {
     title: 'Trivia Game',
     iFrame: true,
     url: 'https://blissful-lewin-7eeb51.netlify.app/',
@@ -44,6 +36,14 @@ const portfolioData = [
     gitHubUrl: 'https://github.com/tfalba/react-freeshelf'
   },
   {
+    title: 'Social Greeting Card App',
+    iFrame: true,
+    url: 'https://sharp-wright-161e04.netlify.app/',
+    shortDescription: 'A team project with a frontend built in react and a backend built in django that creates a REST API on heroku. Users can create custom greeting cards using photos from the Unsplash API, save and edit them. Users can follow other friends and favorite cards.',
+    coverImageUrl: '',
+    gitHubUrl: 'https://github.com/momentum-projects/group-social-ecards-tracy-logan-matt'
+  },
+  {
     title: 'Mystery Word',
     iFrame: false,
     url: 'https://blooming-escarpment-83670.herokuapp.com/core/',
@@ -52,19 +52,19 @@ const portfolioData = [
     gitHubUrl: 'https://github.com/tfalba/mystery-word'
   },
   {
-    title: 'Chore Wars',
-    iFrame: true,
-    url: 'https://chorewars.netlify.app/',
-    shortDescription: 'A chore tracking app for families and friends. Built as a final team project at Momentum Learn. Frontend in React using a backend API built on a Django REST framework.',
-    gitHubUrl: ''
-  },
-  {
     title: 'Mystery Word in React',
     iFrame: true,
     url: 'https://loving-euclid-9331c1.netlify.app/',
     shortDescription: 'A hangman type game built with React',
-    gitHubUrl: ''
+    gitHubUrl: 'https://github.com/tfalba/mystery-word-react'
 
+  },
+  {
+    title: 'Chore Wars',
+    iFrame: true,
+    url: 'https://chorewars.netlify.app/',
+    shortDescription: 'A chore tracking app for families and friends. Built as a final team project at Momentum Learn. Frontend in React using a backend API built on a Django REST framework.',
+    gitHubUrl: 'https://github.com/JLT-Phase4'
   },
 
   {
@@ -74,14 +74,6 @@ const portfolioData = [
     shortDescription: 'A memory tile match game built with vanilla JavaScript. Includes multiple levels and category types.',
     coverImageUrl: '',
     gitHubUrl: 'https://github.com/tfalba/js-memory-game-tfalba'
-  },
-  {
-    title: 'Movie Watching Tracker',
-    iFrame: false,
-    url: '',
-    shortDescription: 'Built with JavaScript to search movies and mark as to-watch or watched. Features trailer preview.',
-    coverImageUrl: movieWatcherImage,
-    gitHubUrl: ''
   }
   // {
   //   title: 'Resume Site',
