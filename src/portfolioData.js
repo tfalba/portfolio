@@ -9,7 +9,7 @@ const portfolioData = [
     url: 'https://blissful-lewin-7eeb51.netlify.app/',
     shortDescription: 'Built in react, this trivia game searches a trivia api for questions by category and gives users the option of playing different levels. Scores are reported at the end with visualization tools from victory.',
     coverImageUrl: '',
-    gitHubUrl: 'https://github.com/momentum-projects/react-trivia-tfalba'
+    gitHubUrl: 'https://github.com/tfalba/react-trivia'
   },
   {
     title: 'Itunes Music Search',
@@ -17,7 +17,7 @@ const portfolioData = [
     url: 'https://suspicious-tesla-230564.netlify.app/',
     shortDescription: 'A search tool built with vanilla JavaScript to find music tracks by song, album, or artist. Features audio samples.',
     coverImageUrl: '',
-    gitHubUrl: 'https://github.com/momentum-team-6/itunes-search-app-tfalba'
+    gitHubUrl: 'https://github.com/tfalba/itunes-search-app'
   },
   {
     title: 'Movie Nomination Tracker',
@@ -41,7 +41,7 @@ const portfolioData = [
     url: 'https://sharp-wright-161e04.netlify.app/',
     shortDescription: 'A team project with a frontend built in react and a backend built in django that creates a REST API on heroku. Users can create custom greeting cards using photos from the Unsplash API, save and edit them. Users can follow other friends and favorite cards.',
     coverImageUrl: '',
-    gitHubUrl: 'https://github.com/momentum-projects/group-social-ecards-tracy-logan-matt'
+    gitHubUrl: 'https://github.com/LMT-Phase3/group-social-ecards-tracy-logan-matt'
   },
   {
     title: 'Mystery Word',
