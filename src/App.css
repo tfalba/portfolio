@@ -159,6 +159,23 @@ a {
   background-size: cover;
 }
 
+.card-detail-holder-mobile {
+  background-color: #1e1f20;
+  position: relative;
+  width: 330px;
+  height: 200px;
+  /* height: 60vh; */
+  border-radius: 10px;
+  background-size: cover;
+}
+
+.mobile-list {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: white;
+  margin-left: 20px;
+}
+
 @media (min-width: 1400px) {
   .card-detail-holder {
     width: 1250px;
@@ -172,6 +189,16 @@ a {
   font-size: 17px;
   padding: 2px;
   text-align: center;
+}
+
+.mobile-title {
+  font-size: 24px;
+}
+
+.project-description-mobile {
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 @media (min-width: 1400px) {

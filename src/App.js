@@ -2,14 +2,28 @@ import './App.css'
 import { HashRouter as Router, Switch, Route, Link } from 'react-router-dom'
 import Carousel from 'react-bootstrap/Carousel'
 import CardContent from './components/CardContent'
+import CardContentMobile from './components/CardContentMobile'
 import MyProfile from './components/MyProfile'
 import MyResume from './components/MyResume'
 import portfolioData from './portfolioData'
 import Button from 'react-bootstrap/Button'
 import { InlineWidget } from 'react-calendly'
 import { Col, Row } from 'react-bootstrap'
+import { useState, useEffect } from 'react'
 
 function App () {
+  const [width, setWidth] = useState(window.innerWidth)
+  const [height, setHeight] = useState(window.innerHeight)
+  const updateWidthAndHeight = () => {
+    setWidth(window.innerWidth)
+    setHeight(window.innerHeight)
+    console.log(width, height)
+  }
+  useEffect(() => {
+    window.addEventListener('resize', updateWidthAndHeight)
+    return () => window.removeEventListener('resize', updateWidthAndHeight)
+  })
+
   return (
 
     <Router>
@@ -49,27 +63,35 @@ function App () {
               <Link to='/portfolio'>Portolio</Link>
             </header>
           </div>
-          <Carousel interval={null} className='App-header2 App'>
-            {portfolioData.map((project, idx) => (
-              <Carousel.Item key={idx}>
-                <CardContent
-                  project={project}
-                />
-                <div style={{ paddingTop: '30px' }} key={idx}>{project.title}</div>
-                <div className='project-description'>{project.shortDescription}</div>
-                {(project.url !== '') && (
-                  <Button variant='secondary'>
-                    <a href={project.url} rel='noreferrer' target='_blank'>Link to site</a>
-                  </Button>
-                )}
-                {(project.gitHubUrl !== '') && (
-                  <Button variant='secondary'>
-                    <a href={project.gitHubUrl} rel='noreferrer' target='_blank'>Link to code</a>
-                  </Button>
-                )}
-              </Carousel.Item>
-            ))}
-          </Carousel>
+          {(width > 1000)
+            ? (
+              <Carousel interval={null} className='App-header2 App'>
+                {portfolioData.map((project, idx) => (
+                  <Carousel.Item key={idx}>
+                    <CardContent
+                      project={project}
+                    />
+                    <div style={{ paddingTop: '30px' }} key={idx}>{project.title}</div>
+                    <div className='project-description'>{project.shortDescription}</div>
+                    {(project.url !== '') && (
+                      <Button variant='secondary'>
+                        <a href={project.url} rel='noreferrer' target='_blank'>Link to site</a>
+                      </Button>
+                    )}
+                    {(project.gitHubUrl !== '') && (
+                      <Button variant='secondary'>
+                        <a href={project.gitHubUrl} rel='noreferrer' target='_blank'>Link to code</a>
+                      </Button>
+                    )}
+                  </Carousel.Item>
+                ))}
+              </Carousel>
+              )
+            : <div>
+              {portfolioData.map((project, idx) => (
+                <CardContentMobile key={idx} project={project} />))}
+              </div>}
+
         </Route>
 
         <Route path='/scheduler'>
