@@ -8,7 +8,6 @@ import MyResume from './components/MyResume'
 import portfolioData from './portfolioData'
 import Button from 'react-bootstrap/Button'
 import { InlineWidget } from 'react-calendly'
-import { Col, Row } from 'react-bootstrap'
 import { useState, useEffect } from 'react'
 
 function App () {
@@ -90,7 +89,7 @@ function App () {
             : <div>
               {portfolioData.map((project, idx) => (
                 <CardContentMobile key={idx} project={project} />))}
-              </div>}
+            </div>}
 
         </Route>
 

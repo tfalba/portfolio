@@ -1,12 +1,12 @@
 import movieDatabaseImage from './images/movie-database-screenshot.jpg'
 import mysteryWordImage from './images/mystery-word-screenshot.jpg'
-import iTunesMusicSearch from './images/iTunes-Music-Search.png'
-import triviaTime from './images/Trivia-Time.png'
-import freeShelf from './images/Free-Shelf.png'
-import choreWars from './images/chore-wars.png'
-import mysterWordReact from './images/mystery-word-react.png'
-import memoryMatch from './images/memory-match.png'
-import cardsWithFriends from './images/Cards-with-Friends.png'
+import iTunesMusicSearch from './images/iTunes-Music-Search.jpg'
+import triviaTime from './images/Trivia-Time.jpg'
+import freeShelf from './images/Free-Shelf.jpg'
+import choreWars from './images/chore-wars.jpg'
+import mysterWordReact from './images/mystery-word-react.jpg'
+import memoryMatch from './images/memory-match.jpg'
+import cardsWithFriends from './images/Cards-with-Friends.jpg'
 
 const portfolioData = [
   {
